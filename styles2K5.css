@@ -74,6 +74,14 @@ li a {
     position: relative;
     right: 200px;
 }
+/*hiding these tables until i find a way for them
+to display aligned on mobile*/
+table#bestNFC {
+	display:none;
+}
+table#bestAFC {
+	display:none;
+}
 	
 }
 /* Section Styles: Code that is inserted from JavaScript */
