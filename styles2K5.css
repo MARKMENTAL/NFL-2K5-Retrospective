@@ -1,0 +1,205 @@
+@charset "utf-8";
+html {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+}
+body {
+	background: radial-gradient(circle, rgba(255,255,255,1) 43%, rgba(241,241,241,1) 56%, rgba(232,232,232,1) 63%);;
+	max-width: 1200px;
+	margin: 40px auto;
+	border: 3px solid black;
+	padding: 40px;
+}
+/* Header Styles */
+body > header {
+	background-color: #4e6a4e;
+}
+/*NFL 2k3 logo*/
+img#NFL {
+	width: 12%;
+	float: left;
+	box-shadow: 10px 10px 15px black;
+	border: 10px solid black;
+}
+
+/*Title NFL 2K Retrospective*/
+h1#title {
+	color: white;
+	font-size: 30px;
+	padding-right: 2px;
+	padding-left:500px;
+	padding-top: 10px;
+	margin: -10px;
+	text-shadow: black 2px 2px 2px;
+}
+p#subtitle{
+	color:white;
+	font-size: 15px;
+	padding-bottom: 15px;
+	padding-right: 2px;
+	padding-left:28px;
+	text-shadow: black 3px 3px 10px;
+	text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    right: 440px;
+}
+li{
+    float: right;
+}
+li a {
+    display: block;
+    padding: 8px;
+    background-color: whitesmoke;
+    color: #4e6a4e;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 980px) {
+	h1#title {
+		color: #4e6a4e;
+		text-shadow: none;
+	}
+	
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    right: 200px;
+}
+	
+}
+/* Section Styles: Code that is inserted from JavaScript */
+img#afclogo {
+	height: 10px;
+	float: right;
+	border-bottom: red solid 2px;
+	padding-bottom: 50px;
+	padding: 3px;
+}
+img#nfclogo {
+	height: 10px;
+	float: right;
+	border-bottom: navy solid 2px;
+	padding-bottom: 50px;
+	padding: 3px;
+}
+section {
+	-webkit-flex: 1 1 500px;
+	flex: 1 1 500px;
+	padding-left: 30px;
+	padding-bottom: 10px;
+}
+section > h1 {
+	font-size: 3em;
+	letter-spacing: 0.12em;
+	line-height: 1.4em;
+	font-weight: normal;
+	color: green;
+	font-family:monospace;
+	margin: 10px 0px 20px 0px;
+	text-align: center;
+}
+section table {
+	margin: 10px 0px 5px 0px;
+	padding: 10px;
+}
+section table caption {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	color: #087e08;
+	font-size: 1.9em;
+	font-weight: bold;
+	letter-spacing: 0.08em;
+	margin-bottom: 10px;
+}
+/*th:nth-of-type(3) is the visual header, (2) is the wins and losses
+  this allows for the text to be aligned with the bars*/
+  
+  section table th:nth-of-type(2) {
+    position: relative;
+    right: -6px;
+}
+section table th:nth-of-type(3) {
+	text-align: right;
+        position: relative;
+        left: 40px;
+}
+
+section table tr td:nth-of-type(3) {
+	width: 150px;
+	text-align: left;
+	padding-right: 7px;
+}
+/*AFC and NFC bars are made with table data elements*/
+td.AFC {
+	background-color: red;
+	padding:3px;
+}
+td.NFC {
+	background-color: navy;
+	padding: 3px;
+}
+
+table#bestNFC {
+	background-image: url(https://nfl2k3fantasyseasons.neocities.org/nfclogo.png);
+	background-size: 1px,1px;
+	border: black solid 5px;
+	padding: 10px;
+	font-size: 14px;
+	color: whitesmoke;
+}
+table#bestAFC {
+background-image: url(https://nfl2k3fantasyseasons.neocities.org/afclogo.png);
+background-size: 1px,1px;
+border: black solid 5px;
+padding: 8px;
+float: right;
+font-size: 14px;
+color: whitesmoke;
+position: relative;
+top: -33px;
+}
+th#thAFC{
+text-align: center;
+}
+th#thNFC{
+text-align: center;
+}
+
+/* Footer Styles */
+footer {
+	width: 100%;
+}
+footer p {
+	color: white;
+	font-size: 1.5em;
+	text-align: center;
+	background-color: #4e6a4e;
+	margin-bottom: -10px;
+	padding: 18px;
+}
+img#tux {
+	display: inline;
+	width: 40px;
+	height:40px;
+	float:center;
+	margin-bottom: -10px;
+}
+img#firefox {
+	display: inline;
+	width: 40px;
+	height:40px;
+	float:center;
+	margin-bottom: -10px;
+}
+p#disclosure{
+	font-size: 0.8em;
+}
+
